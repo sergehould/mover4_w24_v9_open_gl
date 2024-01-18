@@ -1,0 +1,9 @@
+﻿  threading.cpp
+C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\ncurse_openGL\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
+C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\ncurse_openGL\threading.cpp(48,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\ncurse_openGL\threading.cpp(62,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\ncurse_openGL\threading.cpp(106,7): warning C4101: 'buf_temp': unreferenced local variable
+C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\ncurse_openGL\threading.cpp(173,15): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\ncurse_openGL\threading.cpp(176,15): warning C4305: '-=': truncation from 'double' to 'float'
+  openGL.vcxproj -> C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-511\ncurse_openGL\Debug\openGL.exe

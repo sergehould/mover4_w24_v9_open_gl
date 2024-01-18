@@ -1,0 +1,7 @@
+C:\serge\Vanier\courses\247-607-VA_Computerized Systems Optimization\projects\visual_studio\multithread_mover4\pdcurses_test\Debug\pdcurses_test.vcxprojAssemblyReference.cache
+C:\Users\sh\OneDrive - Vanier College\Vanier\courses\247-607-VA_Computerized Systems Optimization\projects\visual_studio\multithread_mover4_v7_cpp\pdcurses_test\Debug\pdcurses_test.vcxprojAssemblyReference.cache
+C:\Users\houlds\OneDrive - Vanier College\Vanier\courses\247-607-VA_Computerized Systems Optimization\projects\visual_studio\multithread_mover4_v7_cpp\pdcurses_test\Debug\pdcurses_test.vcxprojAssemblyReference.cache
+C:\Users\houlds\OneDrive - Vanier College\Vanier\courses\visual_studio_projects\247-607\projects\visual_studio\multithread_mover4_v7_cpp\pdcurses_test\Debug\pdcurses_test.vcxprojAssemblyReference.cache
+C:\Users\houlds\Documents\sd_tempo_files\multithread_mover4_v8\pdcurses_test\Debug\pdcurses_test.vcxprojAssemblyReference.cache
+C:\Users\houlds\Documents\Vanier\courses\visual_studio_projects\247-607\multithread_mover4_v9\pdcurses_test\Debug\pdcurses_test.vcxproj.AssemblyReference.cache
+C:\Users\houlds\Documents\Vanier\courses_C_drive\visual_studio_projects_original\247-607\visual_studio\multithread_mover4_v9\pdcurses_test\Debug\pdcurses_test.vcxprojAssemblyReference.cache
