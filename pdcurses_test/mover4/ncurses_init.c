@@ -3,8 +3,7 @@
 * 	Contains definitions of useful  ncurses library functions
 *
 *	Author				Date			Version
-*	Serge Hould			27 Dec. 2020	1.0.0
-*	Serge Hould			May 2023		1.1.0	Add height_get(), width_get() and screen_init()
+*	Serge Hould			May 2023		1.1.0	
 *
 *****************************************************************************/
  

@@ -1,4 +1,4 @@
-/* SH					12 April 2023			Add a macro FILE_STATE to disable state and log files.*/
+/* SH					12 April 2023			*/
 #ifndef CONFIG_H
 #define CONFIG_H
 

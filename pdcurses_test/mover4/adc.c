@@ -4,9 +4,7 @@
 *	Description: Contains functions related to ADC.
 *
 *	Author				Date					Version
-*	Serge Hould			16 May 2022				v1.0.0	First version
-*	SH					6 Mar. 2023				v1.1.0	renamed adc_read()
-*														Add UDP mode
+*	SH					6 Mar. 2023				v1.1.0	
 *	
 *********************************************************************************************************/
 

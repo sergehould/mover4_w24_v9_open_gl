@@ -4,54 +4,49 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103
   ncurses_init.c
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(53,13): warning C4101: 'height': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(53,6): warning C4101: 'width': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(51,10): warning C4101: 'stdstr': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(66,13): warning C4101: 'height': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(66,6): warning C4101: 'width': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(65,10): warning C4101: 'stdstr': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(78,10): warning C4101: 'stdstr': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(52,13): warning C4101: 'height': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(52,6): warning C4101: 'width': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(50,10): warning C4101: 'stdstr': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(65,13): warning C4101: 'height': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(65,6): warning C4101: 'width': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(64,10): warning C4101: 'stdstr': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(77,10): warning C4101: 'stdstr': unreferenced local variable
   main.cpp
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
   task_controller.c
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(238,14): warning C4101: 'iret2': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(498,55): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(499,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(475,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(510,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(529,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(540,7): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(601,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(624,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(283,24): warning C4101: '_pos': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(295,10): warning C4101: 'traj_ptr_debug': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(767,2): warning C4551: function call missing argument list
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(711,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(712,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(720,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(721,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(729,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(730,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(738,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(739,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(686,8): warning C4101: 'temp_tics': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(972,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1018,9): warning C4101: 'r': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1159,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1169,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1218,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(189,14): warning C4101: 'iret2': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(449,55): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(450,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(426,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(461,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(480,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(491,7): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(552,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(575,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(234,24): warning C4101: '_pos': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(246,10): warning C4101: 'traj_ptr_debug': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(235,13): warning C4101: 'canframe': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(233,75): warning C4101: 'cnt2': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(626,2): warning C4551: function call missing argument list
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(783,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(776,6): warning C4101: 'i': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(923,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(969,9): warning C4101: 'r': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1110,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1120,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1169,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1288,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1305,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1322,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1337,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1354,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1371,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1386,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1445,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1451,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1466,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1472,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1508,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1396,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1402,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1417,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1423,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1459,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   task_openGl.c
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
@@ -115,19 +110,14 @@ C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(272,43): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(273,43): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(277,72): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  tick.cpp
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\tick.cpp(13,11): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\tick.cpp(15,24): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\tick.cpp(21,24): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
   udp.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160): message : see previous definition of 'MOUSE_MOVED'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(223,22): warning C4309: '=': truncation of constant value
-  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(209,22): warning C4309: '=': truncation of constant value
   Generating Code...
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(87): warning C4715: 'udp_init': not all control paths return a value
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(230): warning C4700: uninitialized local variable 'the_frame' used
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1183): warning C4715: 'get_keyb_f': not all control paths return a value
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(73): warning C4715: 'udp_init': not all control paths return a value
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(216): warning C4700: uninitialized local variable 'the_frame' used
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1134): warning C4715: 'get_keyb_f': not all control paths return a value
   adc.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
   adc.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
 task_controller.obj : warning LNK4248: unresolved typeref token (01000017) for 'pthread_mutex_t_'; image may not run

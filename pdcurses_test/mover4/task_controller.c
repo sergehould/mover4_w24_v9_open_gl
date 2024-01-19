@@ -1,58 +1,9 @@
 /*
-*	Description:
+*	Description: Controller for Mover4 robot arm.
 *
 *	Author				Date			Version
-*	Serge Hould			16 May 2022		v3.0.0	The controller was revamped
-*	Serge Hould			16 May 2022		v3.1.0	Add	1.5	degrees small error to the simulator to match real robot
-*	Serge Hould			22 May 2022		v3.2.0	Add	set_time and print_time - Not tesed on Linux yet
-*	Serge Hould			27 May 2022				set_time and print_time tested OK on Linux
-*	Serge Hould			27 May 2022		v4.0.0	New trajectory control - tested ok on the robot
-*	Serge Hould			30 May 2022		v4.1.0	Major renaming of variables and setters-getters
-*	Serge Hould			30 May 2022		v4.2.0	Execute a circle without bug in VS. Tested OK on the robot.
-*	Serge Hould			31 May 2022		v4.3.0	Wrote and debugged set_sp_tics() get_sp_tics() set_all_sp_tics()
-*												get_all_sp_tics() local functions.
-*												Streamlined the controller loop. Tested OK on the robot.
-*	Serge Hould			31 May 2022		v4.3.1	Enable set_sp_tics() function in Robot mode.
-*	Serge Hould			11 Jan. 2023	v4.3.2	Modify message when in extrapolation state
-*	Serge Hould			13Feb. 2023		v4.4.0	Add mutexes to set_all_sp_angles()
-*	Serge Hould			26Feb. 2023		v4.5.0	Add a local buffer traj_buf to prevent a crash when
-*												a task is cancelled while looping inside set_all_sp_angles().
-*												Protection for traj_cnt and traj_max inside pTask_Controller -
-*												by adding setter-getter.
-*	SH 					6 Mar. 2023		v4.6.0	Remove DEBUG related snippets
-*												Add readADC_udp(). Use of config.h to enable/disable udp mode
-*	SH					7 Mar.2023		v4.7.0	Add traj_cnt_clear() and traj_stop() functions.
-*												Add skip counter to adc_value read to reduce period.
-*												Also, add adc_value_temp to prevent atomicity.
-*												Add a line inside EXTRAPOL case to force IDLE state
-*												whenever traj_max is 1 or less.
-* SH					8 Mar. 2023				Remove "if (traj_max_get()<=1) set_control_mode(j, IDLE)" line
-*												because	otherwise cannot extraplate a single value
-*	SH					9 Mar.2023				Modified to if (traj_max_get()<1) set_control_mode(j, IDLE) when
-*												in extrapolate mode.
-*												if (traj_max_get() == 0) set_control_mode(j, IDLE);
-*												void traj_stop(void) traj_max_set(0); was previously set to 1
-*												set_all_sp_angles() add a blocing parameter
-* SH					14 April 2023			Disable fseek within pTask_Rx because it bugs with BB Green
-* SH					15 May 2023				Sets limit to all_pv_angles_get() because otherwise it might return too large values.
-*												Resend the packet multiple times if no response at boot time
-* SH					16 May 2023		v4.8.0	Spawn thread_Rx inside thread_controller (after sending initial packets just before the while(1) loop)
-*												Send more packets than needed to make up for lost packets before the while(1) loop inside 
-*												thread_controller.
-*												Disabled all file read/write in UDP mode
-* SH					17 May 2023		v5.0.0	New version for fetching the robot positions by sending 4 packets
-* SH					18 May 2023		v5.1.0	Refactor function names. E.g. set_all_sp_angles() becomes traj_set()
-* SH					30 May 2023		v5.2.0	Create a LOCK macro to allow the removal of the joint and cartesian boundaries - not tested on the robot yet
-* SH					1 June 2023		v5.3.0	WARNING: Remove 100mS delay inside traj_set() function. 
-*												This way, task_kbrd is more responsive when a key is pressed-maintained.
-* SH					2 June	2023	v5.4.0	Add a small delay to traj_stop()
-*												In traj_set(), add an if statement in case the buffer is too large
+* SH					2 June	2023	v5.4.0	
 *												
-*
-*
-*	TODO: 
-*			warning messages don't erase completely
-*			
 *		
 *********************************************************************************************************/
 
