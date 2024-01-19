@@ -23,17 +23,16 @@
     <ClInclude Include="mover4\header\ncurses_init.h" />
     <ClInclude Include="mover4\header\public.h" />
     <ClInclude Include="mover4\header\task_controller.h" />
+    <ClInclude Include="mover4\header\tick.h" />
     <ClInclude Include="mover4\header\udp.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\common\tick.cpp" />
     <ClCompile Include="mover4\adc.c" />
     <ClCompile Include="mover4\ncurses_init.c" />
     <ClCompile Include="mover4\sol_mover4\main.cpp" />
-    <ClCompile Include="mover4\sol_mover4\task_display_cart.c" />
-    <ClCompile Include="mover4\sol_mover4\task_kbrd.c" />
     <ClCompile Include="mover4\task_controller.c" />
     <ClCompile Include="mover4\task_openGl.c" />
+    <ClCompile Include="mover4\tick.cpp" />
     <ClCompile Include="mover4\udp.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

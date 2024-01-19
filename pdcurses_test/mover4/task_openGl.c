@@ -21,7 +21,8 @@
 #include "header/adc.h"
 #include "../freeglut/include/GL/freeglut.h"
 #include "../freeglut/include/GL/glut.h"
-#include "../../../../../common/tick.h"
+#include "header/tick.h"
+
 
 #define HAVE_STRUCT_TIMESPEC  // For win32 only - because TIMESPEC is re-defined inside pthread.h
 

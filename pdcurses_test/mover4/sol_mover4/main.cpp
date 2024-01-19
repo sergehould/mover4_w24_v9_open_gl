@@ -34,16 +34,10 @@ int main(void)
 	ncurses_init();
 
 	startTasksControllerRx();// combined tasks controller and received - pTask_Controller and pTask_Rx
-	//startTask2(); //kb
-	//startTask_display_z_r_azim();// display
 	startTaskOpenGl();
-	//jog_task_start();
 
 	pthread_joinControllerRx();
-	//pthread_join2();
-	//pthread_join_z_r_azim();
 	pthread_join_openGl();
-	//pthread_join_task_jog();
 	exit(EXIT_SUCCESS);
 }
 

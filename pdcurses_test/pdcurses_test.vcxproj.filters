@@ -33,6 +33,9 @@
     <ClInclude Include="mover4\header\public.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mover4\header\tick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mover4\ncurses_init.c">
@@ -50,16 +53,10 @@
     <ClCompile Include="mover4\adc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\common\tick.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="mover4\task_openGl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mover4\sol_mover4\task_kbrd.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mover4\sol_mover4\task_display_cart.c">
+    <ClCompile Include="mover4\tick.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
