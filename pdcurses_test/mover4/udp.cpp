@@ -1,21 +1,7 @@
 /****************************************************************************
  *  UDP.cpp 
  *
- *  Description: TODO
- * 
- *	Author			Date				Version
- *	Serge Hould		27 Feb. 2023		v1.0.0	    Tested in loopback mode - crude 
- *                                                  packets are retured to the client. No CAN 
- *                                                  packets involved. See server bbb_server_udp-can.cpp
- * SH               3 Mar. 2023         v2.0.0      Populates setFrame2(), setFrame3() and setFrame4()
- *                                                  Add limits to setFrame6() - the limits inside setFrame6() 
- *                                                  inside can.c were removed - see 247-607\projects\visual_studio
- *                                                  \multithread_mover4_udp\pdcurses_test\mover4
- *													Tested succesfully with the real robot.
- *	SH				6 Mar.2023						Was tested successfully on 3 robots running simulteanously
- *  SH				17 May 2023         v2.1.0      Add set_sock_timeout()
- *                                                  Remove closesocket(sockfd) and WSACleanup() to prevent 10093 error
- * SH               30 May 2023         v2.2.0      Remove joints's boundaries
+ * SH               30 May 2023         v2.2.0
  *
  *  
  *****************************************************************************/
