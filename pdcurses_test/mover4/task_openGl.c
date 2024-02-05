@@ -59,6 +59,7 @@ void x_y_z_draw(void);
 
 // callback function
 void renderScene(void){
+	Sleep(1);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glClearColor(1, 1, 1.0f, 0);
 	glLoadIdentity();
