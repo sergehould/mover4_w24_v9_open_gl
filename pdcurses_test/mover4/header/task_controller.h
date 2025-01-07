@@ -6,6 +6,7 @@
  *	Author				Date			Version
  *	Serge Hould			16 May 2022		2.0.0		
  *	Serge Hould			24 May 2022		2.0.1 add print_time() & void set_time()
+ *  Serge Hould			19 March 2024	2.0.2 add data_t struct
  */
 
 #ifndef TASK_CONTROLLER_H
@@ -19,15 +20,25 @@
 #include <stdlib.h>
 #include <string.h>
 #include <curses.h>
+#include "../header/config.h"
+
 
 #define JOG_MODE	0
 #define NORM_MODE	1
 #define TEST_MODE	2
-#define RESET_ERROR	0xd0
-#define EN_MOTOR	0xd1
+#define RESET_ERROR		0xd0
+#define EN_MOTORS		0xd1
+#define RESET_MOTORS	0xd2
 #define	GRIP_DIS	0x00
-#define	GRIP_CLOSE	0x02
-#define	GRIP_OPEN	0x03
+#ifdef  REBEL4
+	#define	GRIP_CLOSE	0x02
+	#define	GRIP_OPEN	0x01
+#else
+	#define	GRIP_CLOSE	0x02
+	#define	GRIP_OPEN	0x03
+#endif
+
+
 #define	ONE_DEGREE	65	//joints: 1° = 65 encoder tics
 
  /*		Speed parameters															*/
@@ -55,12 +66,17 @@
 
 typedef struct
 {
+	double value[10];
+}data_f;
+
+typedef struct
+{
 	double data[6];		//angle 
 }kin_f;
 
 typedef struct
 {
-	int data[4];		// position
+	int data_i[4];		// position
 }kin_i;
 
 enum { EXTRAPOL, TRAJECT, IDLE };
@@ -76,18 +92,17 @@ void enable_motor(void);
 void resetJointsToZero(void);
 double pv_angle_get(int nb);
 double sp_angle_get(int nb);
-kin_f all_sp_angles_get(void);
-kin_f all_pv_angles_get(void);
+data_f all_sp_angles_get(void);
+data_f all_pv_angles_get(void);
 void startTasksControllerRx(void);
 void pthread_joinControllerRx(void);
 void delay_ms(int);
 void set_warnings(char* str);
 int get_warnings(char* str); 
 void init_files(void);
-void print_warnings(int v, int h);
 void set_errors(char* str);
 int get_errors(char* str);
-void print_errors( int v, int h);
+void print_errors( int color,int v, int h);
 void close_files(void);
 void speed_set(double base, double shld, double elbow, double wrist);;
 void print_time(int v, int h);
@@ -95,5 +110,11 @@ void set_time(int t);
 void traj_set(double* ptr, int max, int blocking);
 void traj_stop(void);
 int readADC_udp(void);
-
+void sp_angle_set(int nb, double value);
+void print(int l, int c, char* str);
+//void mvprintw_m(int l, int c, const char* format, ...);
+void mvprintw_m(int col, int l, int c, const char* format, ...);
+void print_warnings(int color, int v, int h);
+int reset_motors(void);
+int enable_motors(void);
 #endif
