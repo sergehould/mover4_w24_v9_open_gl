@@ -1,126 +1,159 @@
-﻿  adc.c
+﻿  adc.cpp
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
-  ncurses_init.c
+  ncurses_init.cpp
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(52,13): warning C4101: 'height': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(52,6): warning C4101: 'width': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(50,10): warning C4101: 'stdstr': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(65,13): warning C4101: 'height': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(65,6): warning C4101: 'width': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(64,10): warning C4101: 'stdstr': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.c(77,10): warning C4101: 'stdstr': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.cpp(79,13): warning C4101: 'height': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.cpp(79,6): warning C4101: 'width': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.cpp(77,10): warning C4101: 'stdstr': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.cpp(94,13): warning C4101: 'height': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.cpp(94,6): warning C4101: 'width': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.cpp(92,10): warning C4101: 'stdstr': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\ncurses_init.cpp(108,10): warning C4101: 'stdstr': unreferenced local variable
+  packet.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103,1): warning C4005: 'MOUSE_MOVED': macro redefinition
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160): message : see previous definition of 'MOUSE_MOVED'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\packet.cpp(327,22): warning C4309: '=': truncation of constant value
   main.cpp
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
-  task_controller.c
+  task_controller_v4.cpp
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(189,14): warning C4101: 'iret2': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(449,55): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(450,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(426,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(461,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(480,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(491,7): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(552,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(575,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(234,24): warning C4101: '_pos': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(246,10): warning C4101: 'traj_ptr_debug': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(235,13): warning C4101: 'canframe': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(233,75): warning C4101: 'cnt2': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(626,2): warning C4551: function call missing argument list
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(783,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(776,6): warning C4101: 'i': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(923,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(969,9): warning C4101: 'r': unreferenced local variable
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1110,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1120,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1169,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1288,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1305,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1322,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1337,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1396,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1402,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1417,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1423,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1459,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  task_openGl.c
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(231,14): warning C4101: 'iret2': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(274,6): warning C4101: 'tics_buf': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(266,8): warning C4101: 'prev_sp_tics': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(263,9): warning C4101: 'temp_r': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(263,34): warning C4101: 'shld_elbow_angle': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(263,17): warning C4101: 'elb_wrist_angle': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(268,31): warning C4101: 'zs': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(268,25): warning C4101: '_pos': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(266,22): warning C4101: '_extrapol_tics': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(267,9): warning C4101: 'i': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(268,35): warning C4101: 'temp_curr_angles': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(269,13): warning C4101: 'canframe': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(267,89): warning C4101: 'cnt2': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(652,2): warning C4551: function call missing argument list
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(882,6): warning C4101: 'i': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1041,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1100,9): warning C4101: 'r': unreferenced local variable
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1478,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1492,19): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1493,8): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1503,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1521,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1521,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1521,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1517,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1533,18): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1534,8): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1543,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1551,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1570,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1570,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1570,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1566,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  task_openGl_v2.cpp
 C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160,1): warning C4005: 'MOUSE_MOVED': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103): message : see previous definition of 'MOUSE_MOVED'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(68,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(76,36): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(77,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(82,41): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(83,34): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(84,21): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(87,44): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(88,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(92,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(94,40): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(95,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(96,18): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(99,44): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(104,33): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(110,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(111,22): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(112,42): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(113,22): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(116,48): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(117,22): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(118,49): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(119,22): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(123,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(124,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(125,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(126,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(134,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(204,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(205,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(206,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(207,45): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(211,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(212,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(213,48): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(214,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(218,45): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(219,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(220,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(221,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(225,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(226,48): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(227,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(228,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(232,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(233,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(234,48): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(235,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(239,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(240,45): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(241,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(242,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(253,43): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(254,58): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(257,102): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(262,43): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(263,56): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(267,88): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(272,43): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(273,43): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl.c(277,72): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  udp.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\wincontypes.h(103,1): warning C4005: 'MOUSE_MOVED': macro redefinition
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\include\curses.h(160): message : see previous definition of 'MOUSE_MOVED'
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(209,22): warning C4309: '=': truncation of constant value
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(43,61): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(44,52): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(164,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(165,14): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(166,14): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(169,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(170,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(171,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(180,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(189,16): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(241,79): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(241,55): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(241,31): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(295,80): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(295,56): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(295,32): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(297,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(318,80): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(318,56): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(318,32): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(343,80): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(343,56): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(343,32): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(345,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(356,69): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(356,76): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(356,31): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(370,81): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(370,56): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(370,31): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(372,38): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(379,81): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(379,56): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(379,31): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(381,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(438,57): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(439,41): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(444,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(446,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(448,38): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(452,55): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(454,27): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(456,38): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(458,60): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(462,40): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(467,35): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(472,36): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(479,35): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(481,37): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(483,36): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(485,36): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(491,55): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(493,60): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(497,64): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(499,64): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(506,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(507,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(508,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(509,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(529,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(688,9): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(689,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(690,20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(691,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(727,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(737,11): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(744,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(776,38): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(779,42): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(786,48): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(792,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(796,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(799,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(805,46): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(811,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(816,29): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(820,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(826,47): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  tick.cpp
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\tick.cpp(13,11): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\tick.cpp(15,24): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\tick.cpp(21,24): warning C4244: '=': conversion from 'LONGLONG' to 'long', possible loss of data
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
   Generating Code...
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(73): warning C4715: 'udp_init': not all control paths return a value
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\udp.cpp(216): warning C4700: uninitialized local variable 'the_frame' used
-C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller.c(1134): warning C4715: 'get_keyb_f': not all control paths return a value
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_openGl_v2.cpp(747): warning C4715: '`anonymous namespace'::file_read_': not all control paths return a value
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1232): warning C4715: 'get_keyb_f': not all control paths return a value
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1607): warning C4793: 'mvprintw_m': function compiled as native:
+  	varargs not supported under /clr
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1610): warning C4793: 'mvprintw_m': function compiled as native:
+  	Found an intrinsic not supported in managed code
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\task_controller_v4.cpp(1612): warning C4793: 'mvprintw_m': function compiled as native:
+  	Found an intrinsic not supported in managed code
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\packet.cpp(123): warning C4715: 'packet_init': not all control paths return a value
+C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\pdcurses_test\mover4\packet.cpp(334): warning C4700: uninitialized local variable 'the_frame' used
   adc.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
   adc.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-task_controller.obj : warning LNK4248: unresolved typeref token (01000017) for 'pthread_mutex_t_'; image may not run
-task_openGl.obj : warning LNK4248: unresolved typeref token (01000018) for 'pthread_attr_t_'; image may not run
-task_controller.obj : warning LNK4248: unresolved typeref token (01000019) for 'pthread_attr_t_'; image may not run
+task_controller_v4.obj : warning LNK4248: unresolved typeref token (01000017) for 'pthread_mutex_t_'; image may not run
+task_openGl_v2.obj : warning LNK4248: unresolved typeref token (01000020) for 'pthread_attr_t_'; image may not run
+task_controller_v4.obj : warning LNK4248: unresolved typeref token (01000019) for 'pthread_attr_t_'; image may not run
   pdcurses_test.vcxproj -> C:\Users\houlds\Documents\tempo\mover4_w24_v9_open_gl\Debug\pdcurses_test.exe

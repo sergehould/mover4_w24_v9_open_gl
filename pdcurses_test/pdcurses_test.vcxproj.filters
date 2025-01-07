@@ -18,9 +18,6 @@
     <ClInclude Include="mover4\header\task_controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mover4\header\udp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="mover4\header\adc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -36,27 +33,33 @@
     <ClInclude Include="mover4\header\tick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mover4\header\packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mover4\header\PCANBasic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mover4\ncurses_init.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mover4\task_controller.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="mover4\sol_mover4\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mover4\udp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mover4\adc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mover4\task_openGl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="mover4\tick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mover4\adc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mover4\ncurses_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mover4\packet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mover4\task_controller_v4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mover4\task_openGl_v2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -13,7 +13,7 @@
 #include <Windows.h>
 #include "../header/packet.h"
 #include "../header/task_controller.h"
-#include "../header/kinematic.h"
+//#include "../header/kinematic.h"
 #include "../header/public.h"
 #include "../header/ncurses_init.h"
 #include <stdio.h>

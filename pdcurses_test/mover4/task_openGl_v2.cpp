@@ -9,9 +9,8 @@
 #include <iostream>
 #include <vector>
 #include "header/task_controller.h"
-#include "header/kinematic.h"
+//#include "header/kinematic.h"
 #include "header/public.h"
-#include "header/traject_gen.h"
 #include <math.h>	
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,7 +23,7 @@
 #include "header/adc.h"
 #include "../freeglut/include/GL/freeglut.h"
 #include "../freeglut/include/GL/glut.h"
-#include "../../../../../common/tick.h"
+#include "header/tick.h"
 #include "header/public.h"
 
 #define HAVE_STRUCT_TIMESPEC  // For win32 only - because TIMESPEC is re-defined inside pthread.h
@@ -748,7 +747,7 @@ static int file_read_(const char* name, data_t* data) {
 }
 
 static double to_radians2(double degrees) {
-	return (degrees * PI) / 180;
+	return (degrees * 3.1416) / 180;
 }
 
 /* Converts from angles to cartesian values */
