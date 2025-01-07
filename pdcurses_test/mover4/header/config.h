@@ -9,7 +9,7 @@
 
 /* Enable the following macro run in UDP packet mode.	*/
 /* Disable it to run in PCAN mode.				*/			
-#define UDP		
+//#define UDP		
 
 /*	This is the IP address of the server.	*/
 /*	You must change this address			*/

@@ -36,6 +36,12 @@
     <ClCompile Include="mover4\task_openGl_v2.cpp" />
     <ClCompile Include="mover4\tick.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="mover4\sol_mover4\vial.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="mover4\lib\x86\PCANBasic.lib" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{BF1D08CF-009C-495E-BBF6-34D1C4AE76FD}</ProjectGuid>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
