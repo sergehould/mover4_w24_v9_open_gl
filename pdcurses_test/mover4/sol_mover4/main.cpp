@@ -11,8 +11,9 @@
  *****************************************************************************/
 
 #include <Windows.h>
-#include "../header/can.h"
+#include "../header/packet.h"
 #include "../header/task_controller.h"
+#include "../header/kinematic.h"
 #include "../header/public.h"
 #include "../header/ncurses_init.h"
 #include <stdio.h>
@@ -26,6 +27,9 @@
 #include "../header/config.h"
 #define HAVE_STRUCT_TIMESPEC  // for win32 only. Because TIMESPEC is re-defined inside pthread.h
 #include <pthread.h>
+
+
+
 
 
 int main(void)
