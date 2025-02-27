@@ -18,13 +18,13 @@ enum { SM_PICK, SM_CARRY, SM_DROP, SM_FALL, SM_WAIT }; // for openGL state machi
 #define HUMERUS 	9.53      //shoulder-to-elbow "bone" 
 #define ULNA		9.72      //elbow-to-wrist "bone" 
 #define GRIPPER_TIP	6.000      //wrist to gripper's tip
-#define GRIPPER	    5.625      //wrist to gripper’s TCP
+#define GRIPPER	    5.625      //wrist to gripperâ€™s TCP
 #else
 #define BASE_HGT 	8.543      //base height   
 #define HUMERUS 	7.520      //shoulder-to-elbow "bone" 
 #define ULNA		8.666      //elbow-to-wrist "bone" 
 #define GRIPPER_TIP	6.000      //wrist to gripper's tip
-#define GRIPPER	    4.800      //wrist to gripper’s TCP
+#define GRIPPER	    5.000      //wrist to gripperâ€™s TCP
 #endif
 typedef struct {
         double value[10];
