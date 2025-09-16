@@ -625,9 +625,11 @@ void* pTask_Rx(void* ptr1) {
 	static double i[4] = { 0 }, ITerm2[4] = { 0 };
 	int i_pid;
 	data_f temp_curr_angles;
+#ifdef REBEL4
 #define		_ERROR	0		// current angle has a small error to match real robot
-//#define		_ERROR	1.25		// current angle has a small error to match real robot
-//#define		_ERROR	0.1		// current angle has a small error to match real robot
+#else
+#define		_ERROR	1.25		// current angle has a small error to match real robot
+#endif
 	while (1) {
 		/* Model to simulate all 4 motors */
 		for (i_pid = 0; i_pid < NUM_JOINTS; i_pid++) {
@@ -1629,4 +1631,5 @@ void controller_start() {
 
 int controller_get() {
 	return controller_cmd;
+
 }
