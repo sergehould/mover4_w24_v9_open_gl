@@ -7,10 +7,17 @@
 *						3 December 2024		1.2			Sets up all 4 joints - Tested ok
 *														Sets up joints set zeros - Tested ok
 *						6 December 2024		1.3			Tested OK on both robots and in both CAN and UDP mode
-*	TODO: 
-*		
-*				
+*						17 Sept. 2025					Does not work propely with Visual Studio 2022.
+*														It cannot read the received packet properly.
+*						18 Sept. 2025					Found out that  CAN get_packet_mess() is not blocking.
+*						19 Sept. 2025					Added  sync_f flag to synchronize Rx CAN packet with
+*														when transmitting CAN packets. Also packet.cpp was modified 
+*											2.0			to clear the CAN queue before a new CAN frame transmission.
+*	TODO:
+*
+*
 *********************************************************************************************************/
+
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -54,7 +61,7 @@
 #include "header/config.h"
 #include "header/ncurses_init.h"
 #include "header/public.h"
-#include "header/tick.h"
+#include "../../../../../common/tick.h"
 #include "header/packet.h"
 
 //#if!defined SIMULATION
@@ -124,7 +131,6 @@
 #define	WARN_OTHER		0x40
 
 /* Error message bits */
-#define	ERR_ROBOT		0X1
 #define	ERR_OTHER		0X2
 
 
@@ -163,7 +169,7 @@ static void traj_max_set(int);
 static int traj_cnt_get();
 static void traj_cnt_inc(void);
 static void traj_cnt_clear(void);
-static void buf_err_fill(int,char* mess);
+
 static void buf_err_clear(void);
 void controller_stop();
 void controller_start();
@@ -209,6 +215,7 @@ static double traj_buf[TRAJ_BUFFER_SIZE];
 static int 	traj_max, traj_cnt = 0;
 static int control_state[4] = { IDLE,IDLE,IDLE,IDLE };
 kin_i _sp_tics = { 0x7d00,0x7d00 ,0x7d00 ,0x7d00 };
+int sync_f = 0; // flag to synchronize CAN packet reception right after transmission
 
 /*	Mutexes */
 /* Note: scope of variables and mutexes are the same */
@@ -380,7 +387,7 @@ static void* pTask_Controller(void* ptr){
 	/*************************************************************************************************/
 
 #endif  // _WIN32
-
+	sync_f = 1; // enables pTask_Rx to read CAN packets
 
 	/* Spawns receive task */
 	iret2 = pthread_create(&thread_Rx, NULL, pTask_Rx, NULL);
@@ -581,6 +588,7 @@ static void* pTask_Controller(void* ptr){
 			//pos0 = _sp_tics.data_i[j] / 16777216; // 0x1000000
 			//setFrame6(jointIDs[j], 0x04, 0x80, byte_high, byte_low, 0x23, grip);
 			setFrame8(jointIDs[j], 0x14, timer & 0xff,pos0, pos1,pos2, pos3, (timer >> 8) & 0xff, grip); // pos0 MSB	
+			sync_f = 1; // unblocks pTask_Rx when in CAN mode
 			Sleep(5);
 		}
 		setFrame8(0x80, 0x14, timer & 0xff, pos0, pos1, pos2, pos3, (timer >> 8) & 0xff, grip); //gripper
@@ -591,6 +599,7 @@ static void* pTask_Controller(void* ptr){
 			byte_high = _sp_tics.data_i[j] & 0x0000ff00;
 			byte_high = _sp_tics.data_i[j] / 256;
 			setFrame6(jointIDs[j], 0x04, timer & 0xff, byte_high, byte_low, (timer >> 8) & 0xff, grip);
+			sync_f = 1; // unblocks pTask_Rx when in CAN mode
 			Sleep(5);
 		}
 #endif
@@ -670,9 +679,16 @@ void* pTask_Rx(void* ptr1) {
 	int rx_f = 0x00;
 	delay_ms(100);
 	while (1) {
-
-		/* Blocks and waits for a frame*/
+#ifdef UDP
+		/* Blocks and waits for a frame when in UDP mode */
 		canframe = get_packet_mess();
+#else
+		/* Waits for sync flag in CAN mode */
+		while (sync_f== 0);
+		sync_f = 0;
+		Sleep(2); // waits 2mS to make sure the packet gets through
+		canframe = get_packet_mess();
+#endif
 		for (j = 0; j < NUM_JOINTS; j++) {
 			if (canframe.id == (jointIDs[j] + 1)) {
 #ifdef REBEL4
@@ -681,6 +697,7 @@ void* pTask_Rx(void* ptr1) {
 #else  MOVER4
 				tics = (256 * ((int)((unsigned char)canframe.data[2]))) + ((unsigned int)((unsigned char)canframe.data[3]));	// combine the two bytes to the position in encoder tics	
 #endif
+				/* Executes at start up only */
 				if (enable_start == 1) {
 					enable_start = 0;
 
@@ -700,12 +717,12 @@ void* pTask_Rx(void* ptr1) {
 #endif
 					}
 
-				}
+				}// end of startup execution
 				set_sp_tics_mem(j, tics);  // Used only for reset zeros
 				/*NOT TESTED YET*/	
 				//mvprintw_m(GREEN_WHITE, 23, 2, "tics rx: %d      ", tics);
 				temp_curr_angles.value[j] = computeJointPos(j, tics); // converts current tics to current angles
-				all_pv_angles_set(temp_curr_angles);  // FUNCTION TO BE DEFINED
+				all_pv_angles_set(temp_curr_angles);  
 
 
 #ifdef REBEL4
@@ -714,7 +731,7 @@ void* pTask_Rx(void* ptr1) {
 					//sprintf(buf_temp2, "- Error: 0x%x  (6-OC 5-EncErr 4-PosLag 3-CommWD 2-MotorDis 1-VeloLag 0-BO-WD)                  ", canframe.data[0]);
 					//buf_err_fill(ERR_ROBOT,buf_temp2);
 					if ((canframe.data[0] & 0xFF) < 0x80) { // If it is not and Over current error, try to restart
-						sprintf(buf_temp2, "- Error joint %d: 0x%02x  (7-OC 6-DRV 5-EncErr 4-PosLag 3-Comm 2-MotorDis 1-EStop 0-OTemp) ", j, canframe.data[0]);
+						sprintf(buf_temp2, "- Error joint %d: 0x%02x  (7-OC 6-DRV 5-EncErr 4-PosLag 3-Comm 2-MotorDis 1-EStop 0-OTemp)    ", j, canframe.data[0]);
 						buf_err_fill(ERR_ROBOT, buf_temp2);
 						//controller_stop();
 						//disable_motor();
@@ -755,7 +772,7 @@ void* pTask_Rx(void* ptr1) {
 						//controller_start();
 					}
 					else {
-						sprintf(buf_temp2, "- Error: 0x%02x  (7-OC 6-DRV 5-EncErr 4-PosLag 3-Comm 2-MotorDis 1-EStop 0-OTemp) - Will restart in a few secs      ", canframe.data[0]);
+						sprintf(buf_temp2, "- Error: 0x%02x  (7-OC 6-DRV 5-EncErr 4-PosLag 3-Comm 2-MotorDis 1-EStop 0-OTemp)      ", canframe.data[0]);
 						buf_err_fill(ERR_ROBOT, buf_temp2);
 						set_error_f(1); // to grind to a halt when over current
 					}
@@ -765,7 +782,7 @@ void* pTask_Rx(void* ptr1) {
 					//sprintf(buf_temp2, "- Error: 0x%x  (6-OC 5-EncErr 4-PosLag 3-CommWD 2-MotorDis 1-VeloLag 0-BO-WD)                  ", canframe.data[0]);
 					//buf_err_fill(ERR_ROBOT,buf_temp2);
 					if ((canframe.data[0] & 0x7F) < 0x40) { // If it is not and Over current error, try to restart
-						sprintf(buf_temp2, "j: %d - Error: 0x%02x  (6-OC 5-EncErr 4-PosLag 3-CommWD 2-MotorDis 1-VeloLag 0-BO-WD) - Will restart in a few secs      ",j, canframe.data[0]);
+						sprintf(buf_temp2, "j: %d - Error: 0x%02x  (6-OC 5-EncErr 4-PosLag 3-CommWD 2-MotorDis 1-VeloLag 0-BO-WD)     ",j, canframe.data[0]);
 						buf_err_fill(ERR_ROBOT, buf_temp2);
 #ifdef FORCED_RESET
 						controller_stop();
@@ -813,6 +830,8 @@ void* pTask_Rx(void* ptr1) {
 					}
 			}
 #endif // MOVER4
+				//print_warnings(RED_WHITE, 21, 2);
+				//print_errors(RED_WHITE, 22, 2);
 				
 #if!defined SIMULATION
 				if (adc_skip++ > 20) { // reads every 12mS * 20 = 240mS
