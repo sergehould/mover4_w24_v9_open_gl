@@ -1,7 +1,7 @@
 /****************************************************************************
  *  packet.cpp 
  *
- *  Description: TODO
+ *  Description: low level functions for UDP and CAN packets tx/rx
  * 
  *	Author			Date				Version
  *	Serge Hould		27 Feb. 2023		v1.0.0	    Tested in loopback mode - crude 
@@ -17,6 +17,11 @@
  *                                                  Remove closesocket(sockfd) and WSACleanup() to prevent 10093 error
  * SH               30 May 2023         v2.2.0      Remove joints's boundaries
  * SH               5 Dec. 2024         v3          File renamed. Option to send UDP or PCAN packets.
+  *                  Sept 2025          v4          Added  CAN_Reset(PcanHandle) to setFramex to clear the queue before 
+  *                                                 transmitting CAN packet. Otherwise the queue gets filled with too many packets.
+  *                                                 Especially with Rebel4, since it contains extra packets.
+  *                                                   
+  *                                                 Use of buf_err_fill() to print errors
  *
  *  
  *****************************************************************************/
@@ -38,6 +43,7 @@
 #include <fcntl.h>   /* File control definitions */
 #include <termios.h> /* POSIX terminal control definitions */
 #include "../can-utils/lib.h"
+#include "header/public.h"
 #endif
 #include <curses.h>
 
@@ -62,6 +68,7 @@
 #include "header/task_controller.h"
 #include "header/ncurses_init.h"
 #include "header/PCANBasic.h"
+#include "header/public.h"
 
 #define HIGH_LIM1 	0xA41C 		// -150 degrees 
 #define LOW_LIM1 	0x55E3		// +150 degrees 	
@@ -84,6 +91,7 @@ struct sockaddr_in server_addr;
 char send_buf[10];
 char rec_buf[BUF_SIZE];
 int cnt = 0;
+static char buf_temp2[250];	// temporary buffer
 
 
 
@@ -178,7 +186,9 @@ int setFrame6(int id, int data1, int data2, int data3, int data4, int data5, int
 
         // Send datagram  to server
         if (sendto(sockfd, (char*)send_buf, 7, 0, (struct sockaddr*)&server_addr, sizeof(server_addr)) == SOCKET_ERROR) {
-            mvprintw_m(RED_WHITE,23, 0, "*udp sendto failed. Error Code : %d\n", WSAGetLastError());
+           // mvprintw_m(RED_WHITE,23, 0, "*udp sendto failed. Error Code : %d\n", WSAGetLastError());
+            sprintf(buf_temp2, "* udp sendto failed.Error Code : % d\n", WSAGetLastError());
+            buf_err_fill(ERR_ROBOT, buf_temp2);
             //printf("sendto failed. Error Code : %d\n", WSAGetLastError());
             //closesocket(sockfd);
             //WSACleanup();
@@ -247,7 +257,9 @@ int setFrame8(int id, int data1, int data2, int data3, int data4, int data5, int
 
     // Send datagram  to server
     if (sendto(sockfd, (char*)send_buf, 9, 0, (struct sockaddr*)&server_addr, sizeof(server_addr)) == SOCKET_ERROR) {
-        mvprintw_m(RED_WHITE, 23, 0, "*udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        //mvprintw_m(RED_WHITE, 23, 0, "*udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        sprintf(buf_temp2, "*udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         //printf("sendto failed. Error Code : %d\n", WSAGetLastError());
         //closesocket(sockfd);
         //WSACleanup();
@@ -265,7 +277,9 @@ int setFrame3(int id, int data1, int data2, int data3) {
 
     // Send datagram  to server
     if (sendto(sockfd, (char*)send_buf, 4, 0, (struct sockaddr*)&server_addr, sizeof(server_addr)) == SOCKET_ERROR) {
-        mvprintw_m(RED_WHITE, 23, 0, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        //mvprintw_m(RED_WHITE, 23, 0, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        sprintf(buf_temp2, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         //closesocket(sockfd);
         //WSACleanup();
         return NULL;
@@ -283,7 +297,9 @@ int setFrame2(int id, int data1, int data2) {
 
     // Send datagram  to server
     if (sendto(sockfd, (char*)send_buf, 3, 0, (struct sockaddr*)&server_addr, sizeof(server_addr)) == SOCKET_ERROR) {
-        mvprintw_m(RED_WHITE,23, 0, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        //mvprintw_m(RED_WHITE,23, 0, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        sprintf(buf_temp2, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         //printf("sendto failed. Error Code : %d\n", WSAGetLastError());
         //closesocket(sockfd);
         //WSACleanup();
@@ -304,7 +320,9 @@ int setFrame4(int id, int data1, int data2, int data3, int data4) {
 
     // Send datagram  to server
     if (sendto(sockfd, (char*)send_buf, 5, 0, (struct sockaddr*)&server_addr, sizeof(server_addr)) == SOCKET_ERROR) {
-        mvprintw_m(RED_WHITE, 23, 0, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+       // mvprintw_m(RED_WHITE, 23, 0, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        sprintf(buf_temp2, "udp sendto failed. Error Code : %d\n", WSAGetLastError());
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         //closesocket(sockfd);
         //WSACleanup();
         return NULL;
@@ -327,7 +345,9 @@ can_frame_ get_packet_mess(void) {
         rec_buf[0] = 0xff; // give a wrong id. In case of timeout it means no specific joint will be returned
         //mvprintw_m(22, 0, "get_packet_mess before recfrom %d           ", nb);
         if ((n = recvfrom(sockfd, rec_buf, BUF_SIZE, 0, (struct sockaddr*)&server_addr, &server_addr_len)) == SOCKET_ERROR) {
-            mvprintw_m(RED_WHITE,24, 0, "*udp recvfrom failed. Error Code : %d\n", WSAGetLastError());
+            //mvprintw_m(RED_WHITE,24, 0, "*udp recvfrom failed. Error Code : %d\n", WSAGetLastError());
+            sprintf(buf_temp2, "*udp recvfrom failed. Error Code : %d\n", WSAGetLastError());
+            buf_err_fill(ERR_ROBOT, buf_temp2);
             //printf("recvfrom failed. Error Code : %d\n", WSAGetLastError());
             //closesocket(sockfd);
             //WSACleanup();
@@ -377,7 +397,7 @@ int packet_init(void) {
     return 0;
 }
 
-/* Sends a UDP packet containing a frame of 6 data */
+/* Sends a CAN packet containing a frame of 6 data */
 int setFrame6(int id, int data1, int data2, int data3, int data4, int data5, int data6) {
     long sum = 0;
     TPCANStatus stsResult;
@@ -434,10 +454,12 @@ int setFrame6(int id, int data1, int data2, int data3, int data4, int data5, int
     msgCanMessage.DATA[3] = data4;
     msgCanMessage.DATA[4] = data5;
     msgCanMessage.DATA[5] = data6;
-
+    CAN_Reset(PcanHandle);// clear rx queue
     stsResult = CAN_Write(PcanHandle, &msgCanMessage);
     if (stsResult != PCAN_ERROR_OK) {
-        mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        //mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        sprintf(buf_temp2, "**pcan write failed. Error Code : 0x%x\n", stsResult);
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         return NULL;
     }
     return NULL;
@@ -445,7 +467,7 @@ int setFrame6(int id, int data1, int data2, int data3, int data4, int data5, int
 }
 
 
-/* Sends a UDP packet containing a frame of 8 data */
+/* Sends a CAN packet containing a frame of 8 data */
 int setFrame8(int id, int data1, int data2, int data3, int data4, int data5, int data6, int data7, int data8) {
     char buff[30] = { 0 };
     long sum = 0;
@@ -506,15 +528,18 @@ int setFrame8(int id, int data1, int data2, int data3, int data4, int data5, int
     msgCanMessage.DATA[5] = data6;
     msgCanMessage.DATA[6] = data7;
     msgCanMessage.DATA[7] = data8;
+    CAN_Reset(PcanHandle); // clear rx queue
     stsResult = CAN_Write(PcanHandle, &msgCanMessage);
     if (stsResult != PCAN_ERROR_OK) {
-        mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        //mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        sprintf(buf_temp2, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         return NULL;
     }
     return NULL;
 
 }
-/* Sends a UDP packet containing a frame of 3 data */
+/* Sends a CAN packet containing a frame of 3 data */
 int setFrame3(int id, int data1, int data2, int data3) {
     TPCANStatus stsResult;
 
@@ -527,10 +552,12 @@ int setFrame3(int id, int data1, int data2, int data3) {
     msgCanMessage.DATA[0] = data1;
     msgCanMessage.DATA[1] = data2;
     msgCanMessage.DATA[2] = data3;
-
+    CAN_Reset(PcanHandle);// clear rx queue
     stsResult = CAN_Write(PcanHandle, &msgCanMessage);
     if (stsResult != PCAN_ERROR_OK) {
-        mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        //mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        sprintf(buf_temp2, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         return NULL;
     }
     return NULL;
@@ -538,7 +565,7 @@ int setFrame3(int id, int data1, int data2, int data3) {
 
 }
 
-/* Sends a UDP packet containing a frame of 2 data */
+/* Sends a CAN packet containing a frame of 2 data */
 int setFrame2(int id, int data1, int data2) {
     TPCANStatus stsResult;
 
@@ -550,17 +577,20 @@ int setFrame2(int id, int data1, int data2) {
     /*Fills the buffer*/
     msgCanMessage.DATA[0] = data1;
     msgCanMessage.DATA[1] = data2;
-
+    CAN_Reset(PcanHandle);// clear rx queue
     stsResult = CAN_Write(PcanHandle, &msgCanMessage);
     if (stsResult != PCAN_ERROR_OK) {
-        mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        //mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        sprintf(buf_temp2, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        buf_err_fill(ERR_ROBOT, buf_temp2);
+
         return NULL;
     }
     return NULL;
 
 }
 
-/* Sends a UDP packet containing a frame of 4 data */
+/* Sends a CAN packet containing a frame of 4 data */
 int setFrame4(int id, int data1, int data2, int data3, int data4) {
     TPCANStatus stsResult;
 
@@ -574,10 +604,12 @@ int setFrame4(int id, int data1, int data2, int data3, int data4) {
     msgCanMessage.DATA[1] = data2;
     msgCanMessage.DATA[2] = data3;
     msgCanMessage.DATA[3] = data4;
-
+    CAN_Reset(PcanHandle);// clear rx queue
     stsResult = CAN_Write(PcanHandle, &msgCanMessage);
     if (stsResult != PCAN_ERROR_OK) {
-        mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        //mvprintw_m(RED_WHITE, 23, 0, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        sprintf(buf_temp2, "*pcan write failed. Error Code : 0x%x\n", stsResult);
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         return NULL;
     }
     return NULL;
@@ -595,7 +627,9 @@ can_frame_ get_packet_mess(void) {
     // We execute the "Read" function of the PCANBasic   
     TPCANStatus stsResult = CAN_Read(PcanHandle, &CANMsg, &CANTimeStamp);
     if (stsResult == PCAN_ERROR_QRCVEMPTY) {
-        mvprintw_m(RED_WHITE, 23, 0, "*pcan receive failed. Error Code : 0x%x\n", stsResult);
+        //mvprintw_m(RED_WHITE, 23, 0, "*pcan receive failed. Error Code : 0x%x\n", stsResult);
+        sprintf(buf_temp2, "*pcan receive failed. Error Code : 0x%x\n", stsResult);
+        buf_err_fill(ERR_ROBOT, buf_temp2);
         return the_frame;
     }
 
