@@ -26,6 +26,8 @@ enum { SM_PICK, SM_CARRY, SM_DROP, SM_FALL, SM_WAIT }; // for openGL state machi
 #define GRIPPER_TIP	6.000      //wrist to gripper's tip
 #define GRIPPER	    5.000      //wrist to gripper’s TCP
 #endif
+
+#define	ERR_ROBOT		0X1
 typedef struct {
         double value[10];
 }data_t;
