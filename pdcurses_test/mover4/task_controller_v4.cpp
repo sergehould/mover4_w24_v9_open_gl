@@ -61,7 +61,7 @@
 #include "header/config.h"
 #include "header/ncurses_init.h"
 #include "header/public.h"
-#include "../../../../../common/tick.h"
+#include "header/tick.h"
 #include "header/packet.h"
 
 //#if!defined SIMULATION
@@ -1652,3 +1652,4 @@ int controller_get() {
 	return controller_cmd;
 
 }
+
