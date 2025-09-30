@@ -37,6 +37,7 @@ void startTaskOpenGl(void);
 void pthread_join_openGl(void);
 void gl_print_warnings(double x, double y, double z);
 void gl_print_errors(double x, double y, double z);
+void buf_err_fill(int, char* mess);
 #ifdef	__cplusplus
 }
 #endif
