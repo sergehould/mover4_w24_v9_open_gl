@@ -59,6 +59,9 @@
     <ClCompile Include="mover4\task_openGl_v2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mover4\adc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="mover4\sol_mover4\vial.txt">
