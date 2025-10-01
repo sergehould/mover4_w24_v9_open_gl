@@ -47,9 +47,6 @@
     <ClCompile Include="mover4\tick.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mover4\adc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="mover4\ncurses_init.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

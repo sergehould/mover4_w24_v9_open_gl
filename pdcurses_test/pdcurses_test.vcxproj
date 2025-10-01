@@ -28,7 +28,6 @@
     <ClInclude Include="mover4\header\tick.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mover4\adc.cpp" />
     <ClCompile Include="mover4\ncurses_init.cpp" />
     <ClCompile Include="mover4\packet.cpp" />
     <ClCompile Include="mover4\sol_mover4\main.cpp" />
