@@ -5,7 +5,7 @@
  *		with controller threads.
  *		It then wait by calling join thread.
  *
- *	Author				Date			Version
+ *	Author				Date			Version 1
  * 
  *
  *****************************************************************************/
